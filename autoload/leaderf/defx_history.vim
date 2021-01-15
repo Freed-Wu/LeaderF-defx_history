@@ -7,6 +7,6 @@ function! leaderf#defx_history#source(args) abort "{{{
 endfunction "}}}
 
 function! leaderf#defx_history#accept(line, args) abort "{{{
-	execute 'Defx -no-new ' . a:line
+	execute 'Defx -no-new' fnameescape(a:line)
 endfunction "}}}
 
